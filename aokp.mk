@@ -18,14 +18,14 @@ TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, device/huawei/mt2/full_mt2.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AOKP stuff.
+$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/huawei/mt2/mt2.mk)
 
 PRODUCT_DEVICE := mt2
-PRODUCT_NAME := cm_mt2
+PRODUCT_NAME := aokp_mt2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRODUCT_NAME=MT2L03 \
